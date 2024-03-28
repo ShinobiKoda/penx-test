@@ -16,27 +16,27 @@
       <nav
         class="lg:flex justify-center items-center min-w-fit p-4 w-6/12 hidden"
       >
-        <a class="flex-grow text-center font-medium text-2xl text-white"
+        <a class="flex-grow text-center font-medium text-2xl text-white cursor-pointer hover:opacity-80"
           >Home</a
         >
-        <a class="flex-grow text-center font-medium text-2xl text-white"
+        <a class="flex-grow text-center font-medium text-2xl text-white cursor-pointer hover:opacity-80"
           >Features</a
         >
-        <a class="flex-grow text-center font-medium text-2xl text-white"
+        <a class="flex-grow text-center font-medium text-2xl text-white cursor-pointer hover:opacity-80"
           >About</a
         >
-        <a class="flex-grow text-center font-medium text-2xl text-white"
+        <a class="flex-grow text-center font-medium text-2xl text-white cursor-pointer hover:opacity-80"
           >Tools</a
         >
       </nav>
       <div class="w-3/12 flex lg:justify-end -mr-28 lg:pr-20">
         <div class="flex gap-2 items-center">
-          <image src="assets/white-gradient-bg-1.png" alt="menu" />
+          <image src="assets/white-gradient-bg-1.png" alt="menu" class="cursor-pointer hover:opacity-95"/>
         </div>
       </div>
         <!-- Hamburger Menu + Dropdown -->
         <div class="menu-wrapper ml-4">
-          <div id="hamburger-icon" class="hamburger lg:hidden">
+          <div id="hamburger-icon" class="hamburger lg:hidden cursor-pointer hover:opacity-70">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
@@ -44,10 +44,10 @@
           <!-- Dropdown Menu -->
           <div id="navbar" class="navbar lg:hidden">
             <ul class="flex flex-col items-center justify-center gap-4 p-8 nav-links">
-              <li><a href="#home" class="text-lg">HOME</a></li>
-              <li><a href="#features" class="text-lg">FEATURES</a></li>
-              <li><a href="#about" class="text-lg">ABOUT</a></li>
-              <li><a href="#tools" class="text-lg">TOOLS</a></li>
+              <li><a href="#home" class="text-lg cursor-pointer hover:opacity-80">HOME</a></li>
+              <li><a href="#features" class="text-lg cursor-pointer hover:opacity-80">FEATURES</a></li>
+              <li><a href="#about" class="text-lg cursor-pointer hover:opacity-80">ABOUT</a></li>
+              <li><a href="#tools" class="text-lg cursor-pointer hover:opacity-80">TOOLS</a></li>
             </ul>
           </div>
         </div>
@@ -55,25 +55,25 @@
     </div>
     <section class="pt-14" id="home">
       <p
-        class="font-extrabold lg:text-[64px] text-center lg:leading-[64px] text-[40px]"
+        class="font-extrabold lg:text-[64px] text-center lg:leading-[64px] text-[35px]"
       >
         Building The Future of <br />
         <span
-          class="text-[#F19A4B] font-extrabold lg:text-[96px] text-center lg:leading-[96px]"
+          class="text-[#F19A4B] font-extrabold lg:text-[96px] text-center lg:leading-[96px] "
           >Decentralised Finance</span
         >
       </p>
       <p
-        class="font-medium lg:text-2xl text-center lg:leading-[28.8px] text-lg"
+        class="font-medium lg:text-2xl text-center lg:leading-[28.8px] text-[18px] px-4"
       >
         Building a future where decentralized finance and centralized meets
         value and creativity is accessible to everyone
       </p>
-      <img src="assets/banner-1.png" />
+      <img src="assets/banner-1.png"/>
     </section>
-    <section class="flex flex-col lg:flex-row lg:p-20" id="about">
+    <section class="flex flex-col lg:flex-row lg:p-20 pt-36" id="about">
       <div class="w-full lg:w-1/2 flex flex-col gap-4 justify-center px-8">
-        <p class="font-bold lg:text-[56px] lg:leading-[67.2px] text-[40px]">
+        <p class="font-bold lg:text-[56px] lg:leading-[67.2px] text-[30px]">
           WHAT IS PENXCHAIN?
         </p>
         <p class="font-medium lg:text-[28px] lg:leading-[40px] text-lg">
@@ -86,24 +86,24 @@
           globally by providing innovation solutions and exceptional user
           experiences,
         </p>
-        <img src="assets/learn-more.png" class="w-8/12 mx-auto" />
+        <img src="assets/learn-more.png" class="w-8/12 mx-auto cursor-pointer hover:opacity-80" />
       </div>
       <div class="w-10/12 lg:w-1/2 mx-auto">
         <img src="assets/pic-1.png" />
       </div>
     </section>
-    <section class="lg:p-20" id="features">
-      <p class="font-bold text-[56px] text-center lg:p-20">
+    <section class="lg:p-20 pt-36" id="features">
+      <p class="font-bold lg:text-[56px] text-center lg:p-20 text-[35px]">
         KEY <span class="text-[#F19A4B]">FEATURES</span>
       </p>
       <div
-        class="lg:grid-cols-3 gap-6 p-4 justify-items-center custom_flex"
+        class=" lg:grid lg:grid-cols-3 gap-6 p-4 justify-items-center custom_flex"
       >
         <div class="border-2 border-[#F19A4B] rounded-[20px] p-4 mx-auto">
-          <p class="font-semibold text-[28px] leading-[33.6px]">
+          <p class="font-semibold lg:text-[28px] lg:leading-[33.6px] text-2xl">
             Comprehensive Ecosystem
           </p>
-          <p class="font-medium text-[#ffffffad] text-xl">
+          <p class="font-medium text-[#ffffffad] text-[16px] lg:text-xl">
             PENXCHAIN will offer a comprehensive ecosystem that covers all
             aspects of DeFi, including a centralized crypto exchange, digital
             wallet, DeFi marketplace, and native token, Our all-in-one solution
@@ -113,10 +113,10 @@
           </p>
         </div>
         <div class="border-2 border-[#F19A4B] rounded-[20px] p-4 mx-auto">
-          <p class="font-semibold text-[28px] leading-[33.6px]">
+          <p class="font-semibold lg:text-[28px] lg:leading-[33.6px] text-2xl">
             User-centric Approach
           </p>
-          <p class="font-medium text-[#ffffffad] text-xl">
+          <p class="font-medium text-[#ffffffad] lg:text-xl text-[16px]">
             We wil prioritize our user's needs and satisfaction. Our plaforms
             will be designed with a user-friendly interface, intuitive
             navigation, and extensive support to ensure a seamless and enjoyable
@@ -126,10 +126,10 @@
           </p>
         </div>
         <div class="border-2 border-[#F19A4B] rounded-[20px] p-4 mx-auto">
-          <p class="font-semibold text-[28px] leading-[33.6px]">
+          <p class="font-semibold lg:text-[28px] lg:leading-[33.6px] text-2xl">
             Cutting-Edge Technology
           </p>
-          <p class="font- text-[#ffffffad] text-xl">
+          <p class="font- text-[#ffffffad] lg:text-xl text-[16px]">
             PENXCHAIN leverages the latest advancements in blockchain technology
             to deliver secure, efficient, and scalabe solutions. OUr platform
             utilize smart contracts, encryption, and other robust security
@@ -139,11 +139,11 @@
           </p>
         </div>
         <div class="border-2 border-[#F19A4B] rounded-[20px] p-4 mx-auto">
-          <p class="font-semibold text-[28px] leading-[33.6px]">
+          <p class="font-semibold lg:text-[28px] lg:leading-[33.6px] text-2xl">
             Focust on Security and Trust
           </p>
 
-          <p class="font-medium text-[#ffffffad] text-xl">
+          <p class="font-medium text-[#ffffffad] lg:text-xl text-[16px]">
             Security is paramount to us. We implement stringent security
             protocols, including multi-factor authentication, cold storage,
             regular audits, and continuous monitoring, to safeguard user funds
@@ -152,10 +152,10 @@
           </p>
         </div>
         <div class="border-2 border-[#F19A4B] rounded-[20px] p-4 mx-auto">
-          <p class="font-semibold text-[28px] leading-[33.6px]">
+          <p class="font-semibold lg:text-[28px] lg:leading-[33.6px] text-2xl">
             Constant Innovation and Develpment
           </p>
-          <p class="font-medium text-[#ffffffad] text-xl">
+          <p class="font-medium text-[#ffffffad] lg:text-xl text-[16px]">
             Security is paramount to us. We implement stringent security
             protocols, including multi-factor authentication, cold storage,
             regular audits, and continuous monitoring, to safeguard user funds
@@ -166,8 +166,8 @@
       </div>
     </section>
 
-    <section class="text-center px-5 py-5" id="tools">
-      <p class="font-bold lg:text-[56px] text-center text-2xl">
+    <section class="text-center px-5 py-36" id="tools">
+      <p class="font-bold lg:text-[56px] text-center text-[35px]">
         OUR <span class="text-[#F19A4B]">PRODUCTS</span>
         <br />
         <span class="text-center text-lg"
@@ -259,42 +259,42 @@
       <div class="flex flex-col gap-2 w-full justify-start lg:hidden">
         <img src="./assets/logo.png" alt="" class="w-40" />
         <div class="flex gap-3">
-          <img src="./assets/facebook.png" alt="" />
-          <img src="./assets/discord.png" alt="" />
-          <img src="./assets/instagram.png" alt="" />
-          <img src="./assets/twitter.png" alt="" />
-          <img src="./assets/telegram.png" alt="" />
-          <img src="./assets/whatsapp.png" alt="" />
+          <img src="./assets/facebook.png" alt="" class="cursor-pointer hover:opacity-80"/>
+          <img src="./assets/discord.png" alt="" class="cursor-pointer hover:opacity-80"/>
+          <img src="./assets/instagram.png" alt="" class="cursor-pointer hover:opacity-80"/>
+          <img src="./assets/twitter.png" alt="" class="cursor-pointer hover:opacity-80"/>
+          <img src="./assets/telegram.png" alt="" class="cursor-pointer hover:opacity-80"/>
+          <img src="./assets/whatsapp.png" alt="" class="cursor-pointer hover:opacity-80"/>
         </div>
       </div>
       <div class="lg:flex lg:flex-col hidden">
         <img src="./assets/logo.png" alt="" class="pb-4 w-7/12" />
         <div class="flex items-center justify-center gap-6">
           <div class="flex flex-col space-y-4">
-            <div class="flex items-center justify-center gap-4">
+            <div class="flex items-center justify-center gap-4 cursor-pointer hover:opacity-80">
               <img src="./assets/facebook.png" alt="" />
               <span>FACEBOOK</span>
             </div>
-            <div class="flex items-center justify-center gap-4">
+            <div class="flex items-center justify-center gap-4 cursor-pointer hover:opacity-80">
               <img src="./assets/discord.png" alt="" class="-ml-2" />
               <span>DISCORD</span>
             </div>
-            <div class="flex items-center justify-center gap-4">
+            <div class="flex items-center justify-center gap-4 cursor-pointer hover:opacity-80">
               <img src="./assets/instagram.png" alt="" class="ml-2" />
               <span>INSTAGRAM</span>
             </div>
           </div>
 
           <div class="flex flex-col space-y-4">
-            <div class="flex items-center justify-center gap-4 -ml-4">
+            <div class="flex items-center justify-center gap-4 -ml-4 cursor-pointer hover:opacity-80">
               <img src="./assets/twitter.png" alt="" />
               <span>TWITTER</span>
             </div>
-            <div class="flex items-center justify-center gap-4">
+            <div class="flex items-center justify-center gap-4 cursor-pointer hover:opacity-80">
               <img src="./assets/telegram.png" alt="" />
               <span>TELEGRAM</span>
             </div>
-            <div class="flex items-center justify-center gap-4">
+            <div class="flex items-center justify-center gap-4 cursor-pointer hover:opacity-80">
               <img src="./assets/whatsapp.png" alt="" />
               <span>WHATSAPP</span>
             </div>
@@ -316,7 +316,7 @@
               class="w-full placeholder-white bg-transparent border-0 outline-0"
               placeholder="Enter your email"
             />
-            <button class="rounded-2xl text-white bg-black py-2 px-4">
+            <button class="rounded-2xl text-white bg-black py-2 px-4 cursor-pointer hover:opacity-70">
               SUBSCRIBE
             </button>
           </div>

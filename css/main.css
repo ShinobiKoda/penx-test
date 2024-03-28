@@ -6,7 +6,7 @@ body {
   font-style: normal;
   color: white;
 
-  background: url(../assets/Frame\ 4.png);
+  background: url(../assets/bg-image.png);
 
   overflow-x: hidden;
 
@@ -67,7 +67,7 @@ body {
   top: 0;
   left: 0;
   width: 100vw;
-  background: url(../assets/Frame\ 4.png);
+  background: black;
   z-index: 3;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   transform: translateY(-100%); /* Start hidden above the screen */
@@ -97,8 +97,12 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
+    gap: 1rem;
   }
 
+  .product__images{
+    width: 18rem;
+  }
 }
 
 
