@@ -9,7 +9,7 @@ body {
   background: url(../assets/bg-image.png);
 
   overflow-x: hidden;
-
+  width: 100%;
   max-width: 1440px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -102,6 +102,12 @@ body {
 
   .product__images{
     width: 18rem;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .hamburger{
+    display: none;
   }
 }
 
