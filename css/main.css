@@ -16,15 +16,14 @@ body {
   margin: 0 auto;
 }
 
-.product__images{
+.product__images {
   height: auto;
   width: 25rem;
 }
 
-.grey__gradient{
-  background: linear-gradient(to right, #FFFFFF4D, #73737399);
+.grey__gradient {
+  background: linear-gradient(to right, #ffffff4d, #73737399);
 }
-
 
 .hamburger {
   cursor: pointer;
@@ -37,7 +36,6 @@ body {
   right: 0;
   z-index: 20; /* Ensure this is above the navbar's z-index */
 }
-
 
 .bar {
   width: 100%;
@@ -69,7 +67,7 @@ body {
   width: 100vw;
   background: black;
   z-index: 3;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transform: translateY(-100%); /* Start hidden above the screen */
   opacity: 0; /* Start as invisible */
   transition: transform 0.5s ease, opacity 0.5s ease; /* Animate these properties */
@@ -81,44 +79,69 @@ body {
   opacity: 1; /* Make visible */
 }
 
-.navbar ul li a:hover{
+.navbar ul li a:hover {
   border-bottom: 2px solid #fff;
   cursor: pointer;
 }
 
-.position{
+.position {
   position: fixed;
   margin-right: 1rem;
 }
 
+.signup_btn_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.6) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+
+  border-radius: 3rem;
+}
 
 @media screen and (max-width: 1023px) {
-  .custom_flex{
+  .custom_flex {
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: 1rem;
   }
 
-  .product__images{
+  .product__images {
     width: 18rem;
+  }
+
+  .signup_btn_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.6) 0%,
+      rgba(255, 255, 255, 0.3) 100%
+    );
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+
+    border-radius: 3rem;
   }
 }
 
-@media screen and (min-width: 1024px){
-  .hamburger{
+@media screen and (min-width: 1024px) {
+  .hamburger {
     display: none;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
