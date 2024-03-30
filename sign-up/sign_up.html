@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../tailwind-css/3.4.1/tailwind-css.js"></script>
+    <link rel="stylesheet" href="../css/signup.css" />
+    <title>PenxChain | SignUp</title>
+  </head>
+  <body class="w-full h-full bg-black">
+    <div
+      class="flex lg:flex-row flex-col lg:gap-16 gap-8 justify-center items-center text-white w-full h-screen my-0 mx-auto div-container p-5"
+    >
+      <div class="lg:w-1/2 img-div relative image-container">
+        <img src="../assets/Rectangle 2.png" alt="" />
+      </div>
+      <div class="lg:w-1/2 w-full flex flex-col gap-10">
+        <div class="text-center lg:text-left">
+          <h2 class="lg:text-[50px] font-bold text-[30px]">Hi there,</h2>
+          <p class="lg:text-[20px] text-[20px]">Sign up to PENXCHAIN today</p>
+        </div>
+
+        <div>
+          <img
+            src="../assets/signup-google.png"
+            alt=""
+            class="cursor-pointer btn-glow lg:w-full"
+          />
+        </div>
+
+        <div class="line-break-container">
+          <div class="line"></div>
+          <span class="text font-semibold text-2xl">OR</span>
+          <div class="line"></div>
+        </div>
+
+        <div class="flex flex-col gap-6 input">
+          <label for="email" class="text-xl font-semibold text-[#F19A4B]"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="outline-none bg-transparent border-b-[1px] text-xl"
+            placeholder="Enter your email..."
+            id="email"
+          />
+        </div>
+
+        <a
+          href="verify_email.html"
+          target="_blank"
+          class="border-[2px] continue_btn"
+          >Continue</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
