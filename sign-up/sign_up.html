@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="../css/signup.css" />
     <title>PenxChain | SignUp</title>
   </head>
-  <body class="w-full h-full bg-black">
+  <body class="w-full h-full bg-black mx-auto text-white">
     <div
       class="flex lg:flex-row flex-col lg:gap-16 gap-8 justify-center items-center text-white w-full h-screen my-0 mx-auto div-container p-5"
+      id="signup_page"
     >
       <div class="lg:w-1/2 img-div relative image-container">
         <img src="../assets/Rectangle 2.png" alt="" />
@@ -46,13 +47,66 @@
           />
         </div>
 
-        <a
-          href="verify_email.html"
-          target="_blank"
-          class="border-[2px] continue_btn"
+        <a target="_blank" id="signup_btn" class="border-[2px] continue_btn"
           >Continue</a
         >
       </div>
     </div>
+
+    <div
+      class="hidden flex-col gap-6 text-center w-full h-screen justify-center items-center px-4 text-white my-auto"
+      id="verify_email_page"
+    >
+      <img src="../assets/verify_email.png" alt="" />
+      <h1 class="lg:text-[48px] text-[30px]">Verify your email</h1>
+
+      <p class="text-[24px]">We have sent an email to the omotola@gmail.com</p>
+      <p class="text-[24px]">
+        Follow the link below to provided below to complete your registration
+      </p>
+
+      <a
+        target="_blank"
+        class="confirm_btn py-2 px-20 rounded text-[1.5rem] cursor-pointer hover:opacity-[0.9]"
+        id="verify_email_btn"
+        >Confirm email</a
+      >
+    </div>
+
+    <div
+      class="hidden flex-col gap-6 text-center w-full h-screen justify-center items-center px-2 my-auto"
+      id="email_verified_page"
+    >
+      <img src="../assets/email_verified.png" alt="" />
+      <h1 class="text-[48px]">Congratulations</h1>
+
+      <p class="text-[24px]">Your email has been verified</p>
+
+      <a
+        target="_blank"
+        class="confirm_btn py-2 px-[9rem] rounded text-[2rem] cursor-pointer hover:opacity-[0.9]"
+        id="email_verified_btn"
+        >Next</a
+      >
+    </div>
+
+    <div
+      class="hidden flex-col gap-6 text-center w-full h-screen justify-center items-center px-4 my-auto"
+      id="success_page"
+    >
+      <img src="../assets/SIGNUP/success.png" alt="" />
+      <h1 class="lg:text-[48px] text-[30px]">
+        You have successfully signed up to PENXCHAIN
+      </h1>
+
+      <a
+        target="_blank"
+        class="confirm_btn py-2 px-8 rounded text-[2rem] cursor-pointer hover:opacity-[0.9]"
+        id="success_btn"
+        >Proceed to login</a
+      >
+    </div>
+
+    <script src="../scripts/signup.js"></script>
   </body>
 </html>
