@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="../tailwind-css/3.4.1/tailwind-css.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+
     <link rel="stylesheet" href="../css/signup.css" />
     <title>PenxChain | SignUp</title>
   </head>
@@ -94,17 +99,198 @@
       class="hidden flex-col gap-6 text-center w-full h-screen justify-center items-center px-4 my-auto"
       id="success_page"
     >
-      <img src="../assets/SIGNUP/success.png" alt="" />
+      <img src="../assets/SIGNUP/success.png" alt="" class="w-[200px]" />
       <h1 class="lg:text-[48px] text-[30px]">
         You have successfully signed up to PENXCHAIN
       </h1>
 
       <a
         target="_blank"
-        class="confirm_btn py-2 px-8 rounded text-[2rem] cursor-pointer hover:opacity-[0.9]"
+        class="confirm_btn py-2 px-8 rounded lg:text-[2rem] text-[19px] cursor-pointer hover:opacity-[0.9]"
         id="success_btn"
         >Proceed to login</a
       >
+    </div>
+
+    <div
+      class="hidden flex-col lg:flex-row gap-6 h-screen my-auto w-full items-center justify-center mx-auto div-container p-3"
+      id="password_page"
+    >
+      <div class="lg:w-1/2 img-div relative image-container">
+        <img src="../assets/Rectangle 2.png" alt="" />
+      </div>
+
+      <div class="flex flex-col gap-6 lg:w-1/2">
+        <div class="text-center lg:text-left">
+          <h2 class="lg:text-[50px] font-bold text-[30px]">Hi there,</h2>
+          <p class="lg:text-[20px] text-[20px]">Sign up to PENXCHAIN today</p>
+        </div>
+
+        <div class="flex flex-col gap-8">
+          <div class="flex flex-col">
+            <label for="username" class="text-xl font-semibold text-[#F19A4B]"
+              >Username</label
+            >
+            <input
+              type="text"
+              class="outline-none bg-transparent border-b-[1px] text-2xl"
+            />
+          </div>
+
+          <div class="flex flex-col relative">
+            <label for="password" class="text-xl font-semibold text-[#F19A4B]"
+              >Password</label
+            >
+            <div class="relative">
+              <input
+                id="password"
+                type="password"
+                class="outline-none bg-transparent border-b-[1px] text-2xl pr-10"
+              />
+              <button
+                id="toggle-password"
+                type="button"
+                class="absolute inset-y-0 right-0 flex items-center px-2"
+              >
+                <i class="fa fa-eye" aria-hidden="true"></i>
+                <!-- Icon when password is hidden -->
+                <i
+                  class="fa fa-eye-slash"
+                  aria-hidden="true"
+                  style="display: none"
+                ></i>
+                <!-- Icon when password is shown -->
+              </button>
+            </div>
+          </div>
+          <div class="flex flex-col relative mt-4">
+            <!-- Added some margin-top for spacing -->
+            <label
+              for="confirm_password"
+              class="text-xl font-semibold text-[#F19A4B]"
+              >Confirm Password</label
+            >
+            <div class="relative">
+              <input
+                id="confirm_password"
+                type="password"
+                class="outline-none bg-transparent border-b-[1px] text-2xl pr-10"
+              />
+              <button
+                id="toggle-confirm-password"
+                type="button"
+                class="absolute inset-y-0 right-0 flex items-center px-2"
+              >
+                <i class="fa fa-eye" aria-hidden="true"></i>
+                <i
+                  class="fa fa-eye-slash"
+                  aria-hidden="true"
+                  style="display: none"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <a
+          target="_blank"
+          id="password_btn"
+          class="border-[2px] continue_btn mt-[2rem]"
+          >Sign Up</a
+        >
+      </div>
+    </div>
+
+    <div
+      class="hidden flex-col lg:flex-row gap-6 h-screen my-auto w-full items-center justify-center mx-auto div-container p-3"
+      id="login_page"
+    >
+      <div class="lg:w-1/2 img-div relative image-container">
+        <img src="../assets/Rectangle 2.png" alt="" />
+      </div>
+
+      <div class="flex flex-col gap-6 lg:w-1/2">
+        <div class="text-center lg:text-left">
+          <h2 class="lg:text-[50px] font-bold text-[30px]">Welcome back,</h2>
+          <p class="lg:text-[20px] text-[20px]">Welcome back to PENXCHAIN.</p>
+        </div>
+
+        <div class="flex flex-col gap-8">
+          <div>
+            <button
+              class="gradient btn-glow w-full px-[1rem] py-[1.5rem] rounded text-2xl text-black font-semibold flex justify-center items-center gap-2"
+            >
+              <!-- Google Icon SVG -->
+              <img src="../assets/google.svg" alt="" class="w-[30px]" />
+              <!-- Text -->
+              Sign in with Google
+            </button>
+          </div>
+
+          <div class="line-break-container">
+            <div class="line"></div>
+            <span class="text font-semibold text-2xl">OR</span>
+            <div class="line"></div>
+          </div>
+
+          <div class="flex flex-col gap-6 input">
+            <label for="email" class="text-xl font-semibold text-[#F19A4B]"
+              >Email address</label
+            >
+            <input
+              type="email"
+              class="outline-none bg-transparent border-b-[1px] text-xl"
+              placeholder="Enter your email..."
+              id="email"
+            />
+          </div>
+
+          <div class="flex flex-col relative">
+            <label for="password" class="text-xl font-semibold text-[#F19A4B]"
+              >Password</label
+            >
+            <div class="relative">
+              <input
+                id="password_login_input"
+                type="password"
+                class="outline-none bg-transparent border-b-[1px] text-2xl pr-10"
+              />
+              <button
+                id="toggle-password-login"
+                type="button"
+                class="absolute inset-y-0 right-0 flex items-center px-2"
+              >
+                <i class="fa fa-eye" aria-hidden="true"></i>
+                <!-- Icon when password is hidden -->
+                <i
+                  class="fa fa-eye-slash"
+                  aria-hidden="true"
+                  style="display: none"
+                ></i>
+                <!-- Icon when password is shown -->
+              </button>
+            </div>
+          </div>
+
+          <div class="flex justify-between text-[19px]">
+            <div>
+              <input type="checkbox" name="" id="" />
+              <span>Remember me</span>
+            </div>
+
+            <span class="cursor-pointer hover:opacity-[0.9]"
+              >Forgot Password?</span
+            >
+          </div>
+
+          <a
+            target="_blank"
+            id="login_btn"
+            class="border-[2px] continue_btn mt-[2rem] text-[1.5rem] px-3rem"
+            >Login</a
+          >
+        </div>
+      </div>
     </div>
 
     <script src="../scripts/signup.js"></script>
